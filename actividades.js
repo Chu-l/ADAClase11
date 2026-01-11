@@ -51,7 +51,7 @@ for (let i = 1; i <= numero; i++) {
 
 /*Ejercicio 4: ¿Es par o impar?*/
 /*Los números pueden ser pares o impares. Escribe un programa que le pida al usuario un número y determine si es par o impar. Muestra un mensaje explicativo indicando qué significa cada caso.*/
-
+/*
 let numero = Number(prompt("Ingrese un número: "));
 
 if (numero % 2 === 0) {
@@ -59,6 +59,21 @@ if (numero % 2 === 0) {
 } else {
     console.log("El número es impar.  Números enteros que no son divisibles por 2, dejando un resto de 1.");
 }
+*/
 
+/*Ejercicio 5: Encuentra los números pares entre dos valores*/
+/*Escribe un programa que le pida al usuario dos números enteros (inicio y fin). El programa debe mostrar todos los números pares que se encuentran entre esos dos valores, incluyendo los límites si son pares. Utiliza un ciclo for para recorrer los números entre el inicio y el fin. Si el número inicial es mayor que el final, el programa debe mostrar un mensaje indicando que los valores son inválidos.*/
 
+let inicio = Number(prompt("Ingrese el número inicial: "));
+let fin = Number(prompt("Ingrese el número final: "));
+
+if (inicio>fin) {
+    console.log("Valores inválidos, el número inicial es mayor que el final.");
+} else { //valores validos
+    for (let i = inicio; i <= fin; i++) { //recorro los num desde inicio a fin
+        if (i % 2 === 0) { //si es par muestro el num
+            console.log(i);
+        }
+    }
+}
 
