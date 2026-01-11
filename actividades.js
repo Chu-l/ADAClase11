@@ -63,7 +63,7 @@ if (numero % 2 === 0) {
 
 /*Ejercicio 5: Encuentra los números pares entre dos valores*/
 /*Escribe un programa que le pida al usuario dos números enteros (inicio y fin). El programa debe mostrar todos los números pares que se encuentran entre esos dos valores, incluyendo los límites si son pares. Utiliza un ciclo for para recorrer los números entre el inicio y el fin. Si el número inicial es mayor que el final, el programa debe mostrar un mensaje indicando que los valores son inválidos.*/
-
+/*
 let inicio = Number(prompt("Ingrese el número inicial: "));
 let fin = Number(prompt("Ingrese el número final: "));
 
@@ -76,4 +76,13 @@ if (inicio>fin) {
         }
     }
 }
+*/
 
+/*Ejercicio 6: La tabla de multiplicar*/
+/*Crea un programa que le pida al usuario un número y luego imprima su tabla de multiplicar desde el 1 hasta el 10. Usa un ciclo for.*/
+
+let numero = Number(prompt("Ingrese un número: "));
+
+for (let i = 1; i <= 10; i++) {
+    console.log(numero + " x " + i + " = " + (numero*i));
+}
