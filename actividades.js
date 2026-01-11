@@ -19,7 +19,7 @@ if (num>0) {
 ● Rojo: "Alto, no puedes avanzar."
 ● Amarillo: "Precaución, prepárate para avanzar."
 ● Verde: "Avanza con seguridad." Si el usuario ingresa un color inválido, el programa debe mostrar un mensaje: "Color no reconocido, ingresa rojo, amarillo o verde." Utiliza un switch para resolver este ejercicio.*/
-
+/*
 let color = prompt("Ingrese un color del semáforo (rojo, amarillo o verde): ");
 
 color = color.toLowerCase(); //por si el usuario escribe con mayúsculas
@@ -37,4 +37,16 @@ switch (color) {
     default:
         console.log("Color no reconocido, ingresa rojo, amarillo o verde.");
 }
+*/
+
+/*Ejercicio 3: ¿Sabes contar?*/
+/*Crea un programa que le pida al usuario un número positivo. El programa deberá contar desde el 1 hasta ese número e imprimir cada valor en la consola. Usa un ciclo for para realizar la tarea.*/
+
+let numero = Number(prompt("Ingrese un número positivo: "));
+
+for (let i = 1; i <= numero; i++) {
+    console.log(i);
+}
+
+
 
