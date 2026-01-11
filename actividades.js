@@ -121,7 +121,7 @@ switch (operacion) {
 
 /*Ejercicio 8: Encuentra los múltiplos de un número*/
 /*Escribe un programa que le pida al usuario un número entero positivo y muestre todos los múltiplos de ese número entre 1 y 100. Utiliza un ciclo for para resolverlo.*/
-
+/*
 let numero = Number(prompt("Ingrese un número entero positivo: "));
 
 if (numero>0) {
@@ -133,3 +133,12 @@ if (numero>0) {
 } else {
     console.log("Por favor ingrese un número entero positivo válido.");
 }
+*/
+
+/*Ejercicio 9: Cuenta regresiva para el despegue*/
+/*Crea un programa que simule la cuenta regresiva para el lanzamiento de un cohete. El programa debe contar desde 10 hasta 0 e imprimir "¡Despegue!" al fi nal. Usa un ciclo for para realizar la cuenta regresiva.*/
+
+for (let i = 10; i >= 0; i--) {
+    console.log(i);
+}
+console.log("¡Despegue!");
