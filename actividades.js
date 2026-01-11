@@ -90,7 +90,7 @@ for (let i = 1; i <= 10; i++) {
 
 /*Ejercicio 7: Calculadora simple*/
 /*Crea un programa que le pida al usuario dos números y una operación matemática a realizar: suma, resta, multiplicación o división. Según la operación ingresada, el programa deberá calcular y mostrar el resultado. Si el usuario ingresa una operación inválida, el programa debe mostrar un mensaje de error. Usa switch para resolverlo.*/
-
+/*
 let num1 = Number(prompt("Ingrese el primer número: "));
 let num2 = Number(prompt("Ingrese el segundo número: "));
 let operacion = prompt("Ingrese la operación (suma, resta, multiplicacion o division): ");
@@ -116,4 +116,20 @@ switch (operacion) {
         break;
     default:
         console.log("Operación inválida. Debe ser suma, resta, multiplicacion o division.");
+}
+*/
+
+/*Ejercicio 8: Encuentra los múltiplos de un número*/
+/*Escribe un programa que le pida al usuario un número entero positivo y muestre todos los múltiplos de ese número entre 1 y 100. Utiliza un ciclo for para resolverlo.*/
+
+let numero = Number(prompt("Ingrese un número entero positivo: "));
+
+if (numero>0) {
+    for (let i = 1; i <= 100; i++) {
+        if (i % numero === 0) { //condicion de multiplo
+            console.log(i);
+        }
+    }
+} else {
+    console.log("Por favor ingrese un número entero positivo válido.");
 }
