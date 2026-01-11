@@ -137,8 +137,30 @@ if (numero>0) {
 
 /*Ejercicio 9: Cuenta regresiva para el despegue*/
 /*Crea un programa que simule la cuenta regresiva para el lanzamiento de un cohete. El programa debe contar desde 10 hasta 0 e imprimir "¡Despegue!" al fi nal. Usa un ciclo for para realizar la cuenta regresiva.*/
-
+/*
 for (let i = 10; i >= 0; i--) {
     console.log(i);
 }
 console.log("¡Despegue!");
+*/ 
+
+/*Ejercicio 10: Adivina el número*/
+/*Crea un programa donde la computadora seleccione un número al azar entre 1 y 10. Luego, pide al usuario que adivine el número hasta 3 intentos. Si el usuario acierta en cualquiera de los intentos, muestra un mensaje de felicitación y detén los intentos restantes. Si no acierta después de los 3 intentos, muestra el número secreto. Usa un for para resolver este ejercicio.*/
+
+// La computadora elige un número al azar entre 1 y 10
+let numeroSecreto = Math.floor(Math.random() * 10) + 1;
+
+for (let i = 1; i <= 3; i++) {
+    let intento = Number(prompt(`Intento ${i}: Adivina el número `));
+
+    if (intento === numeroSecreto) {
+        console.log("¡Felicitaciones!");
+        break; // corta el ciclo si acierta
+    }
+
+    // Si llega al último intento y no acertó
+    if (i === 3) {
+        console.log("El número secreto era:", numeroSecreto);
+    }
+}
+
