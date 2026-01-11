@@ -80,9 +80,40 @@ if (inicio>fin) {
 
 /*Ejercicio 6: La tabla de multiplicar*/
 /*Crea un programa que le pida al usuario un número y luego imprima su tabla de multiplicar desde el 1 hasta el 10. Usa un ciclo for.*/
-
+/*
 let numero = Number(prompt("Ingrese un número: "));
 
 for (let i = 1; i <= 10; i++) {
     console.log(numero + " x " + i + " = " + (numero*i));
+}
+*/
+
+/*Ejercicio 7: Calculadora simple*/
+/*Crea un programa que le pida al usuario dos números y una operación matemática a realizar: suma, resta, multiplicación o división. Según la operación ingresada, el programa deberá calcular y mostrar el resultado. Si el usuario ingresa una operación inválida, el programa debe mostrar un mensaje de error. Usa switch para resolverlo.*/
+
+let num1 = Number(prompt("Ingrese el primer número: "));
+let num2 = Number(prompt("Ingrese el segundo número: "));
+let operacion = prompt("Ingrese la operación (suma, resta, multiplicacion o division): ");
+// Normalizamos el texto
+operacion = operacion.toLowerCase();
+
+switch (operacion) {
+    case "suma":
+        console.log("Resultado: ", num1 + num2);
+        break;
+    case "resta":
+        console.log("Resultado: ", num1 - num2);
+        break;
+    case "multiplicacion":
+        console.log("Resultado: ", num1 * num2);
+        break;
+    case "division":
+        if (num2 === 0) {
+            console.log("Error: no se puede dividir por cero.");
+        } else {
+            console.log("Resultado: ", num1 / num2);
+        }
+        break;
+    default:
+        console.log("Operación inválida. Debe ser suma, resta, multiplicacion o division.");
 }
